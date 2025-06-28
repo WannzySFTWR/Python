@@ -1,7 +1,6 @@
 import barcode
 from barcode.writer import ImageWriter
 
-# Fungsi untuk membuat barcode
 def generate_barcode(data, filename):
 
     code128 = barcode.get_barcode_class('code128')
@@ -13,6 +12,6 @@ def generate_barcode(data, filename):
     print(f"Barcode berhasil dibuat: {full_filename}")
 
 if __name__ == "__main__":
-    user_input = input("Masukkan teks atau angka untuk barcode: ")
-    filename = input("Masukkan nama file hasil (tanpa ekstensi): ")
+    user_input = input("Input teks or number for barcode: ")
+    filename = input("Name file: ")
     generate_barcode(user_input, filename)
