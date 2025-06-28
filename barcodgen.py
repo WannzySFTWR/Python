@@ -9,7 +9,7 @@ def generate_barcode(data, filename):
 
  
     full_filename = barcode_obj.save(filename)
-    print(f"Barcode berhasil dibuat: {full_filename}")
+    print(f"Barcode Succesfully: {full_filename}")
 
 if __name__ == "__main__":
     user_input = input("Input teks or number for barcode: ")
